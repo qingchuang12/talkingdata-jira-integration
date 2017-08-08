@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "id": "16507",
+      "key": "SDMK-1691",
+      "fields": {
+        "summary": "修复Gateway写入redis失败导致用户调用请求失败的bug",
+        "created": "2017-08-04T16:45:26.000+0800",
+        "priority": {
+          "name": "Medium"
+        },
+        "assignee": {
+          "emailAddress": "zhigang.zhao@tendcloud.com"
+        },
+        "updated": "2017-08-04T16:46:45.000+0800",
+        "status": {
+          "name": "To Do"
+        }
+      },
+      "description": "流量整形模块",
+      "timetracking": {
+        "remainingEstimate": "2h",
+        "originalEstimate": "2h"
+      },
+      "progress": {
+        "total": 7200,
+        "progress": 0,
+        "percent": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<idea-plugin version="2">
+  <id>com.talkingdata.jira.integration</id>
+  <name>TalkingData Jira Integration</name>
+  <version>1.0</version>
+  <vendor email="bingxin.li@tendcloud.com" url="https://www.talkingdata.com/">TalkingData</vendor>
+
+  <description><![CDATA[
+TalkingData Jira Integration工具方便开发者更好的使用Jira进行敏捷开发的工作，该插件提供了以下功能：
+<br>
+1. 获取用户所有可见的Board
+<br>
+2. 获取Board下正在进行的Sprint
+<br>
+3. 获取Sprint下所有的Issue
+<br>
+4. 记录Issue的工作时间，改变Issue的状态
+<br>
+<br>
+
+The TalkingData Jira Integration tool makes it easier for developers to use Jira for agile development, which provides the following features:
+<br>
+1. Get all the visible boards for the user
+<br>
+2. Get active sprint of board selected
+<br>
+3. Get all issues of active sprint
+<br>
+4. Record the working time of Issue and change the status of Issue
+<br>
+<br>
+Developer： 冰心
+<br>
+Email： bingxin.li@tendcloud.com
+<br>
+Blog： http://happyshome.cn
+<br>
+Company： https://www.talkingdata.com/
+    ]]></description>
+
+  <change-notes><![CDATA[
+V 1.0
+<br>
+1. Get all the visible boards for the user
+<br>
+2. Get active sprint of board selected
+<br>
+3. Get all issues of active sprint
+<br>
+4. Record the working time of Issue and change the status of Issue
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="141.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="TalkingData Jira" secondary="true" icon="/TD.png" anchor="right"
+                factoryClass="com.talkingdata.jira.integration.ui.MyToolWindowFactory"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <projectService serviceInterface="com.talkingdata.jira.integration.entity.JiraConfig" serviceImplementation="com.talkingdata.jira.integration.entity.JiraConfig"/>
+    <projectConfigurable groupId="tools" displayName="TalkingData Jira Tntegration" id="preference.ORMConfigurable" instance="com.talkingdata.jira.integration.entity.JiraConfigurable" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
